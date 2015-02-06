@@ -16,6 +16,16 @@
 
       $scope.loadText = "Select Feed Resource From here";
 
+
+      $scope.init = function(){
+        var resource = $scope.resource[0];
+        $scope.loadText = resource.title;
+        FeedService.parseFeed(resource.url).then(function(res){
+          $scope.feeds=res.data.responseData.feed.entries;
+          console.log($scope.feeds);
+        });
+      }
+
       $scope.addResource = function() {
         ngDialog.open({
           template: 'addFeedForm',
