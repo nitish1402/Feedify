@@ -22,7 +22,7 @@
   <!-- use bootstrap grid style here -->
   <div class="container-fluid" ng-controller="FeedCtrl">
     <!-- Side Menu -->
-    <div class="row">
+    <div class="row" ng-init="init()">
       <div class="col-md-2 sidebar">
         <button class="btn btn-primary btn-lg" data-ng-click="addResource()" >Subscribe</button>
         <h3 class="text-primary">Feed Resources</h3>
@@ -99,12 +99,42 @@
         </div>
       </form>
   </script>
+
+  <footer style="margin-bottom:0px">
+    <div class="container-fluid">
+      <div class="row">
+        <ul style="padding: 10px;background: rgba(0,0,0,0.5);">
+          <li style="display: inline;padding: 0px 10px 0px 10px;">
+            <p class="text-left text-danger">Contact Me here</p>
+          </li>
+          <li style="display: inline;padding: 0px 10px 0px 10px;">
+            <iframe src="https://ghbtns.com/github-btn.html?user=nitish1402&type=follow&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
+          </li>
+          <li style="display: inline;padding: 0px 10px 0px 10px;">
+            <iframe src="https://ghbtns.com/github-btn.html?user=nitish1402&repo=Feedify&type=star&count=true" frameborder="0" scrolling="0" width="70px" height="20px"></iframe>
+          </li>
+          <li style="display: inline;padding: 0px 10px 0px 10px;">
+            <a href="https://twitter.com/princeladdak" class="twitter-follow-button" data-show-count="false" data-dnt="true">Follow @princeladdak</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+          </li>
+          <li style="display: inline;padding: 0px 10px 0px 10px;">
+          <!-- Place this tag where you want the widget to render. -->
+          <div class="g-follow" data-annotation="bubble" data-height="20" data-href="//plus.google.com/u/0/112884073981953941064" data-rel="author"></div
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </footer>
   <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.10/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.10/angular-animate.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.10/angular-route.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ng-dialog/0.3.8/js/ngDialog.min.js"></script>
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
   <script src="feedify.js"></script>
 </body>
 </html>

@@ -7,6 +7,15 @@ body {
   padding-top: 50px;
 }
 
+.ulc{
+  padding: 10px;
+  background: rgba(0,0,0,0.5);
+}
+.lic{
+  display: inline;
+  padding: 0px 10px 0px 10px;
+}
+
 h1{
   font-family: 'Londrina Shadow', cursive;
   text-align: center;
